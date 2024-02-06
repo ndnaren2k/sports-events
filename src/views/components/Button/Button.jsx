@@ -5,19 +5,20 @@ export const StyledButton = styled.button`
   padding-inline: 0rem;
   padding-block: 0rem;
   padding: 0.25rem 0.5rem;
-  border: 1px solid blue;
+  border: 1px solid darkgreen;
   border-radius: 0.25rem;  
   background: none;
-  background-color: blue;
+  background-color: lightgreen;
   text-transform: uppercase;
-  color: white;
+  color: black;
   font: inherit;
   cursor: pointer;
   outline: none;
 
   &:hover {
-    background-color: darkblue;
-    border-color: darkblue;
+    background-color: darkgreen;
+    border-color: darkgreen;
+    color:white;
   }
 
   &:disabled {

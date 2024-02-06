@@ -1,4 +1,4 @@
-export const MOCK_EVENT_URL = `https://run.mocky.io/v3/2744c231-8991-4ae8-bc45-1f645437585a`;
+export const MOCK_EVENT_URL = `https://run.mocky.io/v3/e9c6a78e-34f6-48fa-bcef-7fc0622cdb1f`;
 
 export const MAX_SELECTED_EVENTS = 3;
 
