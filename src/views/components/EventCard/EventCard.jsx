@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  EventCardActions,
-  EventCardCategory,
-  EventCardContainer,
-  EventCardContent,
-  EventCardDivider,
-  EventCardTitle,
-} from "./styles";
+import './EventCard.scss'
 import { convertDateToTime } from "../../../utils/dateUtils";
 
 export const EventCard = ({
@@ -22,17 +15,17 @@ export const EventCard = ({
   const end = convertDateToTime(end_time);
 
   return (
-    <EventCardContainer isDisabled={isDisabled}>
-      <EventCardCategory>{event_category?.[0]}</EventCardCategory>
-      <EventCardDivider />
-      <EventCardContent>
-        <EventCardTitle>{event_name}</EventCardTitle>
+    <div className="event-card-container" isDisabled={isDisabled}>
+      <div className="event-card-category">{event_category?.[0]}</div>
+      <div className="event-card-divider" />
+      <div className="event-card-content">
+        <div className="event-card-title">{event_name}</div>
         <div>({event_category})</div>
         <div>
           {start} - {end}
         </div>
-        <EventCardActions>{children}</EventCardActions>
-      </EventCardContent>
-    </EventCardContainer>
+        <div className="event-card-actions">{children}</div>
+      </div>
+    </div>
   );
 };

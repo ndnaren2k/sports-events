@@ -8,12 +8,7 @@ import { MAX_SELECTED_EVENTS, eventActionMap } from "./constants";
 import {
   isEventDisabled,
 } from "./utils";
-import {
-  EventList,
-  EventListTitle,
-  EventListWrapper,
-  SpinnerAlignment,
-} from "./styles";
+import './EventList.scss'
 import { Loader } from "../components/Loader/Loader";
 
 export const AllEvents = ({ isEventLoading }) => {
@@ -39,14 +34,14 @@ export const AllEvents = ({ isEventLoading }) => {
 
 
   return (
-    <EventListWrapper isFullHeight>
-      <EventListTitle>All Events</EventListTitle>
+    <div className="event-list-wrapper">
+      <h2 className="event-list-title">All Events</h2>
       {isEventLoading ? (
-        <SpinnerAlignment>
+        <div className="loader-alignment">
           <Loader />
-        </SpinnerAlignment>
+        </div>
       ) : (
-        <EventList onClick={handleEventClick}>
+        <div className="event-list" onClick={handleEventClick}>
           {sortedEvents.map((event) => {
             const isDisabled = isEventDisabled(selectedEvents, event);
             return (
@@ -61,8 +56,8 @@ export const AllEvents = ({ isEventLoading }) => {
               </EventCard>
             );
           })}
-        </EventList>
+        </div>
       )}
-    </EventListWrapper>
+    </div>
   );
 };

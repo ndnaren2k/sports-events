@@ -1,10 +1,10 @@
 import React, { useMemo } from "react";
-import { EventList, EventListTitle, EventListWrapper } from "./styles";
 import { useEventsContext } from "../../contexts/eventsContext";
 import { eventActionMap } from "./constants";
 import { actions } from "../../reducers/Actions";
 import { EventCard } from "../components/EventCard/EventCard";
 import { Button } from "../components/Button/Button";
+import './EventList.scss';
 
 export const SelectedEvents = () => {
   const { selectedEvents, dispatch } = useEventsContext();
@@ -23,9 +23,9 @@ export const SelectedEvents = () => {
   };
 
   return (
-    <EventListWrapper>
-      <EventListTitle>Selected Events</EventListTitle>
-      <EventList onClick={handleSelectedEventClick}>
+    <div className="event-list-wrapper">
+      <h2 className="event-list-title">Selected Events</h2>
+      <div className="event-list"  onClick={handleSelectedEventClick}>
         {sortedEvents.map((event) => {
           return (
             <EventCard key={event.id} {...event}>
@@ -38,7 +38,7 @@ export const SelectedEvents = () => {
             </EventCard>
           );
         })}
-      </EventList>
-    </EventListWrapper>
+      </div>
+    </div>
   );
 };

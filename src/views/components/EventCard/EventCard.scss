@@ -1,0 +1,40 @@
+.event-card-container{
+    border: 1px solid cyan;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    gap: 1.5rem;
+
+    &:disabled{
+        background-color: "lightgray";
+    }
+}
+
+.event-card-category{
+    display: flex;
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.event-card-divider{
+    width: 2px;
+    background-color: black;   
+}
+
+.event-card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.event-card-title{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.event-card-actions{
+    display: flex;
+    justify-content: end;
+    padding-top: 0.5rem;
+}
