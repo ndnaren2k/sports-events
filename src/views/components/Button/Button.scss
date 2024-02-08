@@ -24,3 +24,13 @@
         border-color: gray;
     }
 }
+.custom-btn-remove{
+    background-color: red;
+    border: 1px solid red;
+
+    &:hover {
+        background-color: red;
+        border-color: red;
+        color:white;
+    }
+}

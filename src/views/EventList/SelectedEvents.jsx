@@ -32,6 +32,7 @@ export const SelectedEvents = () => {
               <Button
                 data-event-id={event.id}
                 data-action={eventActionMap.REMOVE}
+                classname="custom-btn custom-btn-remove"
               >
                 Remove
               </Button>

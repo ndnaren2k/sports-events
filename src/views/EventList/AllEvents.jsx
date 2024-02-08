@@ -50,6 +50,7 @@ export const AllEvents = ({ isEventLoading }) => {
                   data-event-id={event.id}
                   data-action={eventActionMap.SELECT}
                   disabled={isDisabled}
+                  classname="custom-btn"
                 >
                   Select
                 </Button>
