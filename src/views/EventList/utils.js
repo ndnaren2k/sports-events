@@ -1,5 +1,9 @@
-export const transformResponseData = (response) => {
-  return response.map((event) => ({
+export const transformResponseData = (selectedEvents, response) => {
+  const filteredResponse = response.filter(event => 
+    !selectedEvents.some(selectedEvent => selectedEvent.id === event.id)
+  );
+
+  return filteredResponse.map((event) => ({
     ...event,
     start_time: new Date(event.start_time),
     end_time: new Date(event.end_time),
