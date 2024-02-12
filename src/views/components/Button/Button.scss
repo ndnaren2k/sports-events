@@ -1,3 +1,7 @@
+/* Custom Button Styles
+ * This section defines the base styling for custom buttons, including padding, border, and background.
+ * It aims for a minimalistic design with a focus on functionality and accessibility. */
+
 .custom-btn{
     padding-inline: 0rem;
     padding-block: 0rem;
@@ -24,6 +28,10 @@
         border-color: gray;
     }
 }
+/* Custom Button Variant - Remove
+ * This variant is styled specifically for actions like removal or deletion, 
+ * indicated by its distinct red color for immediate recognition. */
+
 .custom-btn-remove{
     background-color: red;
     border: 1px solid red;

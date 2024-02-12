@@ -1,53 +1,35 @@
-# Sports Events⚡  
+# Sports Events Portal 
 
-## Introduction
-- This application shows all sports events open for registration.
-- User can see the list of all the events, where each event has name, event category & time.
-- User can select an event by clicking on select button
-- All selected events will appear on the right hand side of the screen
-- User can deselect an event from the selected event list.
+## Developed by Rishita Choubey
 
-## Live Demo
-View the live demo of the application here 👉 [Sports Events](https://sports-events.vercel.app/).
+### A Web Application for Sports Day Event Registration
 
+---
 
-## Presentation Deck
-View the presentation behind the implementation of this project.
-[Presentation](https://docs.google.com/presentation/d/1gProMTa2XA9xeHHfGJ2NBwqxgWZySGs9zYTTkFjc5M0/edit)
+### Project Overview
 
+This ReactJS-based web application offers a platform for discovering and registering for sports day events. It features dynamic data rendering from mock APIs, user interaction for event selection, and UI responsiveness.
 
-## Technologies Used
-- React JS
-- Styled Components
-- React Toastify
-- React Testing Library
-- Axios
+### Key Functionalities
 
-## Page Load Time
-- Performance Report is calculated using [Page Speed Insights](https://pagespeed.web.dev/)
-- [Desktop Performance Report](https://pagespeed.web.dev/analysis/https-sports-events-vercel-app/ot9lw2x93b?form_factor=desktop)
-- [Mobile Performance Report](https://pagespeed.web.dev/analysis/https-sports-events-vercel-app/ot9lw2x93b?form_factor=mobile)
+- **Event Browsing**: Display events in a dynamic card layout with details like name, category, and time.
+- **Event Selection**: Implement logic for user selections with constraints (up to 3 events, no timing conflicts).
+- **Data Persistence**: Ensure selections remain after page reloads, using browser storage solutions.
 
+### Technical Details
 
-## Performance Improvements
-- Used `useMemo` hook to avoid re-renders & cache state value.
-- Made the website responsive to maintain consitent performance for mobile & tablet users.
-- Fixed layout shift issues & accessibility issues recommended by page speed insights report.
-- Using vercel to deploy this application which uses it's edge network to cache requests & improve initial load time.
+- **ReactJS**: Utilizes component-based architecture for modular development and efficient state management.
+- **Mock API Integration**: Fetches event data dynamically to simulate real-world application scenarios.
+- **Conflict Resolution**: Incorporates logic to prevent users from selecting overlapping events.
 
-## Run Application
-- Clone the repository
-- Run npm install to install required dependencies
-- Finally, run npm start to run the application and open the browser to view the site on localhost.
-- Use Node JS version `16.17.0` to run the application on local
+### Development Highlights
 
-## 👤 **Jaynil Gaglani**
-- Portfolio: [jaynil.gaglani](https://bit.ly/jaynil-profile)
-- Linkedin: [Jaynil Gaglani](https://www.linkedin.com/in/jaynilgaglani/)
-- Twitter: [@Jaynil1611](https://twitter.com/Jaynil_Gaglani)
-- Github: [@Jaynil1611](https://github.com/Jaynil1611)
+- **Component-Driven Development**: Emphasizes reusable UI components for scalability and maintainability.
+- **State Management**: Uses React's Context API and Reducers for global state handling and to manage user selections.
+- **Responsive Design**: Adheres to responsive design principles for optimal user experience across devices.
 
-## Show your support
-Give a ⭐️ if you like this repository!
+### Presentation Link
 
-Made with ❤️ by Jaynil Gaglani
+Delve deeper into the application's development process, architecture, and technical challenges via the presentation here: [Sports Events Portal Presentation](#)
+
+---
