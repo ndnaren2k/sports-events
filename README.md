@@ -30,6 +30,6 @@ This ReactJS-based web application offers a platform for discovering and registe
 
 ### Presentation Link
 
-Delve deeper into the application's development process, architecture, and technical challenges via the presentation here: [Sports Events Portal Presentation](#)
+Delve deeper into the application's development process, architecture, and technical challenges via the presentation [here](https://docs.google.com/presentation/d/1GqR1IOwZG7aj4Vkw8oncP2Hn676VgyPbnOk8F-uYjCA/edit?usp=sharing).
 
 ---
