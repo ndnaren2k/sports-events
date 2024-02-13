@@ -1,14 +1,8 @@
-/* Custom Button Styles
- * This section defines the base styling for custom buttons, including padding, border, and background.
- * It aims for a minimalistic design with a focus on functionality and accessibility. */
-
+/* Base styles for custom buttons */
 .custom-btn{
-    padding-inline: 0rem;
-    padding-block: 0rem;
     padding: 0.25rem 0.5rem;
     border: 1px solid darkgreen;
     border-radius: 0.25rem;  
-    background: none;
     background-color: lightgreen;
     text-transform: uppercase;
     color: black;
@@ -16,29 +10,26 @@
     cursor: pointer;
     outline: none;
 
+    /* Hover state */
     &:hover {
         background-color: darkgreen;
-        border-color: darkgreen;
-        color:white;
+        color: white;
     }
 
+    /* Disabled state */
     &:disabled {
         cursor: not-allowed;
         background-color: gray;
-        border-color: gray;
     }
 }
-/* Custom Button Variant - Remove
- * This variant is styled specifically for actions like removal or deletion, 
- * indicated by its distinct red color for immediate recognition. */
 
+/* Variant for removal actions */
 .custom-btn-remove{
     background-color: red;
     border: 1px solid red;
 
+    /* Hover state */
     &:hover {
-        background-color: red;
-        border-color: red;
-        color:white;
+        color: white;
     }
 }

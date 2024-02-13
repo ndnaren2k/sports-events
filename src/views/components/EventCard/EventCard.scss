@@ -1,6 +1,4 @@
-/* Base container styles for the event card.
- * Sets up a border, rounded corners, and internal spacing for the content.
- * Utilizes flexbox to layout child elements horizontally with a gap between them. */
+/* Styles for the event card container */
 
 .event-card-container{
     border: 1px solid cyan;
@@ -9,11 +7,14 @@
     display: flex;
     gap: 1.5rem;
 
+  /* Styles for disabled state */
+
     &:disabled{
         background-color: "lightgray";
     }
 }
 
+/* Category label styles */
 .event-card-category{
     display: flex;
     align-self: center;
@@ -22,21 +23,26 @@
     font-weight: bold;
 }
 
+/* Divider styling */
 .event-card-divider{
     width: 2px;
     background-color: black;   
 }
 
+/* Content container styling */
 .event-card-content{
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
 }
 
+/* Title styling */
 .event-card-title{
     font-size: 1rem;
     font-weight: bold;
 }
+
+/* Actions container styling */
 .event-card-actions{
     display: flex;
     justify-content: end;

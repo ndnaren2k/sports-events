@@ -1,13 +1,11 @@
-/* Keyframe animation for the loader. 
- * Defines a single turn (360 degrees rotation) to create a spinning effect. */
+/* Keyframe animation for the loader. */
 
 @keyframes loading {
     to {
       transform: rotate(1turn);
     }
   }
-  /* Styling for the loader element.
- * This container centers the loader animation horizontally using flexbox. */
+  /* Styling for the loader element. */
 
   .loader {
     display: flex;
@@ -17,15 +15,14 @@
       content: "";
       width: 50px;
       height: 50px;
-      border: 4px solid rgba(0, 0, 0, 0.1); /* Light grey border */
-    border-top: 4px solid #3498db; /* Blue border */
+      border: 4px solid rgba(0, 0, 0, 0.1); 
+    border-top: 4px solid #3498db; 
       border-radius: 50%;
       animation: loading 1s ease-in-out infinite; /* Applies the rotating animation */
     }
   }
   
-  /* Container for the loader, providing additional styling and layout.
- * This ensures the loader is properly positioned and visually distinct if needed. */
+/* Loader container */
  
   .loader-container{
     display: flex;
