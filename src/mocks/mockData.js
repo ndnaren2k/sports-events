@@ -1,3 +1,4 @@
+// Mock event data used for testing purposes
 export const mockEvents = [
   {
     id: 1,
